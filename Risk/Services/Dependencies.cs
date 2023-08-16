@@ -1,4 +1,6 @@
-﻿using Risk.Repository;
+﻿using Risk.Entities;
+using Risk.Entities.ViewModels;
+using Risk.Repository;
 
 namespace Risk.Services
 {
@@ -6,7 +8,8 @@ namespace Risk.Services
     {
         public static void RegisterDependencies(this IServiceCollection services)
         {
-            services.AddScoped<ICompaniesRepository, CompaniesRepository>();
+            services.AddScoped<IRepository<Company, CompanyDto>, CompaniesRepository>();
+            services.AddScoped<IRepository<Employee, EmployeeDto>, EmployeesRepository>();
         }
     }
 }

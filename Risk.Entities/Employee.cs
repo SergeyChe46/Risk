@@ -8,6 +8,6 @@
         //public string Position { get; set; } = string.Empty;
         public decimal Salary { get; set; }
         public required Guid CompanyId { get; set; }
-        public Company Company { get; set; }
+        public Company? Company { get; set; }
     }
 }

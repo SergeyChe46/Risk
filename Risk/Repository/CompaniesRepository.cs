@@ -7,7 +7,7 @@ using System.Data.Common;
 
 namespace Risk.Repository
 {
-    public class CompaniesRepository : ICompaniesRepository
+    public class CompaniesRepository : IRepository<Company, CompanyDto>
     {
         private readonly ApplicationContext _context;
         public CompaniesRepository(ApplicationContext context)
@@ -22,10 +22,21 @@ namespace Risk.Repository
 
         public async Task<Company?> GetById(Guid id)
         {
-            return await _context.Companies.FindAsync(id);
+            return await _context.Companies
+                .Where(emp => emp.Id == id)
+                .Include(comp => comp.Employees)
+                .Select(comp => new Company
+                {
+                    City = comp.City,
+                    Id = id,
+                    Name = comp.Name,
+                    Phone = comp.Phone,
+                    Employees = comp.Employees
+                })
+                .FirstOrDefaultAsync();
         }
 
-        public async Task PutCompany(Guid id, CompanyDto editedData)
+        public async Task Put(Guid id, CompanyDto editedData)
         {
             var editedCompany = await _context.Companies.FindAsync(id);
             if (editedCompany != null)
@@ -45,7 +56,7 @@ namespace Risk.Repository
             }
         }
 
-        public async Task PostCompany(CompanyDto newEntityData)
+        public async Task Post(CompanyDto newEntityData)
         {
             var newCompany = newEntityData.Adapt<Company>();
             _context.Companies.Add(newCompany);
@@ -59,7 +70,7 @@ namespace Risk.Repository
             }
         }
 
-        public async Task DeleteCompany(Guid id)
+        public async Task Delete(Guid id)
         {
             var company = await _context.Companies.FindAsync(id);
             if (company != null)
