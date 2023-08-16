@@ -1,0 +1,12 @@
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\bin\Debug\net7.0\Risk.Entities.deps.json
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\bin\Debug\net7.0\Risk.Entities.dll
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\bin\Debug\net7.0\Risk.Entities.pdb
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.csproj.AssemblyReference.cache
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.AssemblyInfoInputs.cache
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.AssemblyInfo.cs
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.dll
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\refint\Risk.Entities.dll
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\Risk.Entities.pdb
+C:\Users\Сергей\source\repos\Risk\Risk.Entities\obj\Debug\net7.0\ref\Risk.Entities.dll

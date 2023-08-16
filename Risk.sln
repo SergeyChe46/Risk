@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Risk", "Risk\Risk.csproj", "{61C8052B-6211-497B-8284-2FF4EC685560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Risk.Entities", "Risk.Entities\Risk.Entities.csproj", "{8B50FCA9-571C-4AD9-B34C-A8DDEAC9D7D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C8052B-6211-497B-8284-2FF4EC685560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C8052B-6211-497B-8284-2FF4EC685560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C8052B-6211-497B-8284-2FF4EC685560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C8052B-6211-497B-8284-2FF4EC685560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B50FCA9-571C-4AD9-B34C-A8DDEAC9D7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B50FCA9-571C-4AD9-B34C-A8DDEAC9D7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B50FCA9-571C-4AD9-B34C-A8DDEAC9D7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B50FCA9-571C-4AD9-B34C-A8DDEAC9D7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87093F27-4061-47B3-8ACE-D749884928BC}
+	EndGlobalSection
+EndGlobal
