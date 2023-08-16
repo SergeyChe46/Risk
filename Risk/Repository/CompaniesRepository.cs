@@ -66,7 +66,7 @@ namespace Risk.Repository
             }
             catch (DbException)
             {
-                throw new Exception("Не удалось создать компанию.");
+                throw new Exception("Не удалось создать сотрудника.");
             }
         }
 
