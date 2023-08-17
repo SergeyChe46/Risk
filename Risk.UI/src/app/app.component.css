@@ -1,0 +1,11 @@
+.nav-link {
+    color: grey;
+}
+
+.nav-link.active {
+    color: yellow;
+}
+
+.bg-primary.bg-gradient {
+    background-image: var(--bs-gradient);
+}

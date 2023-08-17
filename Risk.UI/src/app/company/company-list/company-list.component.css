@@ -1,0 +1,6 @@
+table.table>tbody>tr:hover td,
+table.table>tbody>tr:hover th {
+  cursor: pointer;
+  color: blue;
+    transform: scale(1.05)
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="companyForm" (ngSubmit)="create()">
+        <div class="mb-3 p-2">
+            <label for="name" class="form-label">Название</label>
+            <input type="text" class="form-control" id="name" formControlName='name' placeholder="Название организации">
+            <span *ngIf="!companyName.valid && companyName.touched" class='error-block'>
+                Введите название организации
+            </span>
+        </div>
+        <div class="mb-3 p-2">
+            <label for="city" class="form-label">Город</label>
+            <input class="form-control" id="city" formControlName='city' placeholder='Город'>
+        </div>
+        <div class="mb-3 p-2">
+            <label for="phone" class="form-label">Телефон</label>
+            <input class="form-control" id="phone" formControlName='phone' placeholder='Телефон организации'>
+            <span *ngIf="!companyForm.valid && companyForm.touched" class='error-block'>
+                <span *ngIf="companyPhone.hasError('minlength')">
+                    Слишком короткий номер
+                </span>
+
+                <span *ngIf="companyPhone.hasError('maxlength')">
+                    Слишком длинный номер
+                </span>
+                </span>
+                </div>
+        <button class='btn btn-primary' type='submit'>Готово</button>
+        </form>
+</div>

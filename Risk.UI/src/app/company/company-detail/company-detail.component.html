@@ -1,0 +1,15 @@
+<div class="grid">
+    <div class="row justify-content-center" >
+    <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">{{company.name || 'Загрузка'}}</h5>
+                <p class="card-text">{{company.city || 'Загрузка'}}</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="company?.employees" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <app-employee-list [employees]="company.employees"></app-employee-list>
+    </div>
+</div>
+</div>

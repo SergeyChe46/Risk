@@ -1,0 +1,25 @@
+<div class='container-fluid'>
+
+    <nav class="navbar navbar-expand bg-primary bg-gradient rounded-bottom-2">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink='' routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact:true}">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/add-company']" routerLinkActive="active">Добавить
+                            компанию</a>
+                    </li>
+                </ul>
+                <!-- <form class=" d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <router-outlet></router-outlet>
+</div>
